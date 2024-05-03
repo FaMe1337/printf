@@ -6,11 +6,11 @@
 /*   By: famendes <famendes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 18:47:33 by famendes          #+#    #+#             */
-/*   Updated: 2024/05/02 19:46:22 by famendes         ###   ########.fr       */
+/*   Updated: 2024/05/03 19:16:24 by famendes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "printf.h"
 
 int	ft_printf_char(const char c, int i)
 {

@@ -6,13 +6,13 @@
 /*   By: famendes <famendes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 16:36:36 by famendes          #+#    #+#             */
-/*   Updated: 2024/05/02 19:44:51 by famendes         ###   ########.fr       */
+/*   Updated: 2024/05/03 19:43:22 by famendes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "printf.h"
 
-static int	printf_format(const char specifier, va_list ap, int	i)
+int	printf_format(const char specifier, va_list ap, int	i)
 {
 	if (specifier == 'c')
 		i += ft_printf_char(va_arg(ap, int), i);
@@ -59,10 +59,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end(ap);
 	return (i);
-}
-
-int	main (void)
-{
-	ft_printf("ola%c",'c');
-	printf("ola%c",'c');
 }

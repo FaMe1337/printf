@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_str.c                                    :+:      :+:    :+:   */
+/*   ft_printf_ptr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: famendes <famendes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/02 19:10:37 by famendes          #+#    #+#             */
-/*   Updated: 2024/05/03 19:16:33 by famendes         ###   ########.fr       */
+/*   Created: 2024/05/03 16:23:04 by famendes          #+#    #+#             */
+/*   Updated: 2024/05/03 19:16:29 by famendes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tprintf.h"
+#include "printf.h"
 
-int	ft_printf_str(const char *str, int i)
+int	ft_printf_ptr(void *str, int i)
 {
-	while (*str)
-	{
-		ft_printf_char(*str, i);
-		i++;
-		str++;
-	}
-	return (i);
+	
 }
