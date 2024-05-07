@@ -18,7 +18,7 @@ int	ft_printf_num(int nb, int i)
 
 	nbl = nb;
 	if (nbl == 0)
-		i += write(1, "0", 1);
+		return (i += write(1, "0", 1));
 	if (nbl < 0)
 	{
 		i += write(1, "-", 1);
