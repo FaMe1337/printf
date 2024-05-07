@@ -14,6 +14,5 @@
 
 int	ft_printf_char(const char c, int i)
 {
-	i++;
-	return (write(1, &c, 1));
+	return (i += write(1, &c, 1));
 }
