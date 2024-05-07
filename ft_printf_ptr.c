@@ -16,7 +16,7 @@ int	ft_printf_ptr(unsigned long long ptr, int i)
 {
 	if (!ptr)
 	{
-		i += write(1, "(null)", 6);
+		i += write(1, "(nil)", 5);
 		return (i);
 	}
 	i += write (1, "0x", 2);
