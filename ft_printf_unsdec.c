@@ -15,10 +15,7 @@
 int	ft_printf_unsdec(unsigned int nb, int i)
 {
 	if (nb == 0)
-	{
-		i += write(1, "0", 1);
-		return (i);
-	}
+		return (i += write(1, "0", 1);
 	if (nb > 9)
 	{
 		i = ft_printf_unsdec(nb / 10, i);
