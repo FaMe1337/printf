@@ -29,7 +29,7 @@ int	printf_format(const char specifier, va_list ap, int i)
 	else if (specifier == 'x')
 		i = ft_printf_hex(va_arg(ap, unsigned int), i, specifier);
 	else if (specifier == '%')
-		i = write (1, "%", 1);
+		i += write (1, "%", 1);
 	else
 		i += write (1, &specifier, 1);
 	return (i);
@@ -47,12 +47,9 @@ int	ft_printf(const char *format, ...)
 	while (*format)
 	{
 		if (*format == '%')
-			i += printf_format(*++format, ap, i);
+			i = printf_format(*++format, ap, i);
 		else
-		{
-			write(1, format, 1);
-			i++;
-		}
+			i += write(1, format, 1);
 		format++;
 	}
 	va_end(ap);
