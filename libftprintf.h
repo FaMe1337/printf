@@ -23,6 +23,6 @@ int	ft_printf_str(const char *str, int i);
 int	ft_printf_ptr(unsigned long long ptr, int i);
 int	ft_printf_num(int nb, int i);
 int	ft_printf_unsdec(unsigned int nb, int i);
-int	ft_printf_hex(unsigned int nb, int i, char specifier);
+int	ft_printf_hex(unsigned int nb, int i, const char specifier);
 
 #endif
