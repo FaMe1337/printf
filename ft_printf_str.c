@@ -15,10 +15,7 @@
 int	ft_printf_str(const char *str, int i)
 {
 	if (!str)
-	{
-		i += write(1, "(null)", 6);
-		return (i);
-	}
+		return (i += write(1, "(null)", 6));
 	while (*str)
 	{
 		i = ft_printf_char(*str, i);
