@@ -18,7 +18,7 @@
 # include <stdio.h>
 
 int	ft_printf(const char *s, ...);
-int	ft_printf_char(int, int i);
+int	ft_printf_char(int c, int i);
 int	ft_printf_str(const char *str, int i);
 int	ft_printf_ptr(unsigned long long ptr, int i);
 int	ft_printf_num(int nb, int i);
