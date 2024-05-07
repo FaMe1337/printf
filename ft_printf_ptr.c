@@ -15,10 +15,7 @@
 int	ft_printf_ptr(unsigned long long ptr, int i)
 {
 	if (!ptr)
-	{
-		i += write(1, "(nil)", 5);
-		return (i);
-	}
+		return (i += write(1, "(nil)", 5));
 	i += write (1, "0x", 2);
 	if (ptr >= 16)
 	{
